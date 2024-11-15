@@ -6,6 +6,6 @@ from django.http.response import HttpResponse
 
 
 def ViewMainAuth(resquest):
-        
+    
     return HttpResponse('hi')
 # Create your views here.
