@@ -1,0 +1,74 @@
+/* Reset Básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Impede rolagem horizontal */
+  
+}
+
+/* Estilo Geral */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Container Principal */
+.container {
+  margin-top: 10%;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+/* Estilo do Cabeçalho e Rodapé */
+header, footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Estilo da Área de Conteúdo */
+.content {
+  display: flex;
+  margin-top: 30px;
+  gap: 10px; /* Espaçamento entre as colunas */
+}
+
+/* Colunas */
+.coluna {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  text-align: center;
+}
+.item-coluna{
+  color: rgb(22, 189, 7);
+}
+.item-coluna-negado{
+  color: red;
+}
+.menor {
+  width: 33%; /* Largura proporcional */
+  margin-bottom: 50px;
+}
+.paragrafo{
+  margin-bottom: 4%;
+}
+
+.maior {
+  width: 66%; /* Largura proporcional */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column; /* Coloca as colunas em uma única coluna */
+  }
+  .coluna {
+    width: 100%; /* Ocupa toda a largura */
+  }
+}
