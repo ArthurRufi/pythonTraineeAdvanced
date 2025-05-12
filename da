@@ -1,0 +1,53 @@
+[33mcommit a40a99ceee692b064a80e39b6d53fde609e32b53[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: ArthurRufi <temparthur87@gmail.com>
+Date:   Mon Dec 16 11:47:19 2024 -0300
+
+    fix(api): corrigir erro 500 ao criar usuários sem e-mail
+    
+    Este commit corrige um bug que causava erro 500 quando usuários
+    eram criados sem fornecer um e-mail válido.
+    
+    Mudanças:
+    - Adicionar validação para campo de e-mail.
+    - Atualizar os testes unitários e incluir casos de borda.
+    
+    Motivação:
+    O erro impactava o fluxo de cadastro de usuários e foi reportado
+    por clientes (issue #45). A validação melhora a confiabilidade da API.
+    
+    Como testar:
+    1. Subir o servidor localmente.
+    2. Enviar uma requisição POST à rota /users sem e-mail.
+    3. Verificar que o servidor retorna erro 400 (Bad Request).
+    
+    --ISERÇÃO--
+
+[33mcommit b5e1c952b12a389e04642b5681843b7876b78660[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: ArthurRufi <temparthur87@gmail.com>
+Date:   Thu Nov 14 21:36:32 2024 -0300
+
+    User Class Created
+
+[33mcommit 52d1df24ee648974f51fda5fde499b4527322726[m
+Author: ArthurRufi <temparthur87@gmail.com>
+Date:   Tue Nov 12 15:54:13 2024 -0300
+
+    auth app created
+
+[33mcommit 9d903906f1ccf9a890cccba4daa03e7e9e6544c9[m
+Author: ArthurRufi <temparthur87@gmail.com>
+Date:   Thu Nov 7 14:41:13 2024 -0300
+
+    cm
+
+[33mcommit 9d43f20b01d2c900114151913fe2ded51f8c96ab[m
+Author: ArthurRufi <temparthur87@gmail.com>
+Date:   Wed Nov 6 19:20:52 2024 -0300
+
+    cm
+
+[33mcommit fae5ae77c4c13a4c184ff26108d8f405410703d5[m
+Author: ArthurRufi <temparthur87@gmail.com>
+Date:   Thu Oct 17 11:01:02 2024 -0300
+
+    config
