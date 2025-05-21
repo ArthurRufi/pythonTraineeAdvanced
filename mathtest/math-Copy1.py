@@ -1,6 +1,17 @@
-import numpy as np
-a = np.array([2, 3, 4])
-a
-a.dtype
-b = np.array([1.2, 3.5, 5.1])
-b.dtype
+def somandoumalistafudida(func):
+    def sumsum(*args):
+        la = []
+        for i in args:
+            la.append(i)
+        return func(la)
+    return sumsum
+    
+@somandoumalistafudida
+def lisya(la):
+    return sum(la)
+
+
+
+if __name__ == "__main__":
+    print(lisya(1, 4, 12, 17, 20, 12))
+    
